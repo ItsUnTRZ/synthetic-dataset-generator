@@ -1,20 +1,20 @@
 # Core dependencies
-opencv-python==4.12.0.88
-Pillow==10.4.0
-numpy==2.2.6
-rembg==2.0.64
+opencv-python==4.8.1.78
+Pillow==10.0.1
+numpy==1.24.3
+rembg==2.0.50
 
 # Additional dependencies that might be used
-scikit-image==0.25.2
-scipy==1.16.0
-matplotlib==3.9.1
+scikit-image==0.21.0
+scipy==1.11.1
+matplotlib==3.7.2
 
 # Jupyter notebook support
 jupyter==1.0.0
-ipykernel==6.29.5
+ipykernel==6.25.0
 
 # Streamlit for UI (if using main_ui.py)
-streamlit==1.32.2
+streamlit==1.28.1
 
 # ONNX runtime (if using models)
-onnxruntime==1.18.0 
+onnxruntime==1.16.3 
