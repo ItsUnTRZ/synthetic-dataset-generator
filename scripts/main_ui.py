@@ -10,6 +10,14 @@ import io
 import contextlib
 import time
 
+# === PAGE CONFIG === (ต้องอยู่ที่จุดเริ่มต้น)
+st.set_page_config(
+    page_title="Synthetic Dataset Generator",
+    page_icon="🧪",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
+
 # === CONFIGURATION ===
 RAW_IMAGE_DIR = r"C:\\Project\\raw_images"
 BG_IMAGE_DIR = r"C:\\Project\\backgrounds"
@@ -502,13 +510,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-# === PAGE CONFIG ===
-st.set_page_config(
-    page_title="Synthetic Dataset Generator",
-    page_icon="🧪",
-    layout="wide",
-    initial_sidebar_state="expanded"
-)
+
 
 # === MAIN HEADER ===
 st.markdown("""
