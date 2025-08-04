@@ -2,7 +2,7 @@
 opencv-python==4.8.1.78
 Pillow==10.0.1
 numpy==1.26.2
-rembg==2.0.50
+rembg==2.0.67
 
 # Additional dependencies that might be used
 scikit-image==0.21.0
