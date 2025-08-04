@@ -1,0 +1,66 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large files and datasets (optional - remove if you want to include them)
+# *.jpg
+# *.png
+# *.zip
+# *.onnx
+# *.csv
+
+# Model files (optional - remove if you want to include them)
+# models/*.onnx
+# models/*.csv
+
+# Dataset files (optional - remove if you want to include them)
+# raw_dataset/
+# synthetic_dataset/
+# augmented_dataset/
+# backgrounds/
+# features/
+# raw_images/
+
+# Annotations (optional - remove if you want to include them)
+# annotations/
+
+# Documents (optional - remove if you want to include them)
+# เอกสาร/ 
