@@ -636,7 +636,11 @@ with col1:
             for i, img_name in enumerate(image_files):
                 img_path = os.path.join(RAW_IMAGE_DIR, img_name)
                 with cols[i % 5]:
-                    st.image(img_path, caption=img_name)
+                    try:
+                        image = Image.open(img_path)
+                        st.image(image, caption=img_name)
+                    except Exception as e:
+                        st.error(f"ไม่สามารถโหลดภาพ {img_name}: {str(e)}")
         else:
             st.markdown("""
             <div class="warning-box">
@@ -681,7 +685,11 @@ with col2:
             for i, img_name in enumerate(image_files):
                 img_path = os.path.join(BG_IMAGE_DIR, img_name)
                 with cols[i % 5]:
-                    st.image(img_path, caption=img_name)
+                    try:
+                        image = Image.open(img_path)
+                        st.image(image, caption=img_name)
+                    except Exception as e:
+                        st.error(f"ไม่สามารถโหลดภาพ {img_name}: {str(e)}")
         else:
             st.markdown("""
             <div class="warning-box">
@@ -779,7 +787,11 @@ with col2:
             for i, img_name in enumerate(feature_files):
                 img_path = os.path.join(FEATURE_DIR, img_name)
                 with cols[i % 3]:
-                    st.image(img_path, caption=img_name)
+                    try:
+                        image = Image.open(img_path)
+                        st.image(image, caption=img_name)
+                    except Exception as e:
+                        st.error(f"ไม่สามารถโหลดภาพ {img_name}: {str(e)}")
         else:
             st.markdown("""
             <div class="warning-box">
@@ -873,7 +885,11 @@ with col3:
             for i, img_name in enumerate(sample_images):
                 img_path = os.path.join(SYN_IMAGE_DIR, img_name)
                 with cols[i % 3]:
-                    st.image(img_path, caption=img_name)
+                    try:
+                        image = Image.open(img_path)
+                        st.image(image, caption=img_name)
+                    except Exception as e:
+                        st.error(f"ไม่สามารถโหลดภาพ {img_name}: {str(e)}")
         else:
             st.markdown("""
             <div class="warning-box">
